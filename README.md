@@ -1,4 +1,4 @@
-LANGKAH AWAL
+<b>LANGKAH AWAL</b>
 1. Siapkan gambar yang akan di segmen, lalu masukan ke folder di langkah 2
 2. Buatkan folder untuk menyimpan gambar yang akan di segmen (misalkan: image)
 3. Buatkan folder untuk menyimpan informasi JSON hasil segmen (misalkan: output)
@@ -13,19 +13,19 @@ LANGKAH AWAL
 9. Bila sudah selesai melakukan segmentasi objek, maka lakukan EXPORT labelling ke COCO (Jgn lupa siapkan folder untuk menampung hasil EXPORT), caranya seperti urutan gambar di bawah ini
 <img src="/asset/4.png" alt="prototype" width="300">
 <img src="/asset/5.png" alt="prototype" width="300">
-
-KONVERSI LABELLING COCO KE YOLO
+<br><br>
+<b>KONVERSI LABELLING COCO KE YOLO</b>
 1. Buka file "annotations.json" yang terletak di folder hasil EXPORT pada poin 9 di langkah awal.
 2. PERLU DIKETAHUI BAHWA LABELLING Class COCO DIMULAI DARI ANGKA 1, SEDANGKAN LABELLING Class YOLO DIMULAI DARI ANGKA 0 (sesuaikan jika untuk banyak class). Untuk itu perlu dilakukan perubahan pada file annotation.json milik COCO dengan cara seperti pada gambar berikut:
 <img src="/asset/6.png" alt="prototype" width="300">
 <img src="/asset/7.png" alt="prototype" width="300">
 3. Setelah dilakukan perubahan, maka gunakan google colab yang bernama <b>coco2yolo_segmen.ipynb</b>
 4. Lalu download hasil konversinya dalam bentuk zip, misalkan bernama my_data.zip. File ini digunakan untuk proses TRAINING
-
-PROSES TRAINING SEGMENTASI
+<br><br>
+<b>PROSES TRAINING SEGMENTASI</b>
 1. BUATKAN SUSUNAN FILE yang satu tempat SEPERTI ILUSTRASI DIBAWAH INI
 Folder bernama "images"   berisi semua file asli yang di segmen
 Folder bernama "labels"   berisi semua file yang sudah diekstrak dari file my_data.zip yang didapat dari no 4 pada KONVERSI LABELING COCO ke YOLO
 File bernama "classes"    berisi nama class-nya
 2. Setelah itu lakukan proses zip, misalkan bernama datasegmen.zip
-3. File pada nomor 2 di upload ke google colab
+3. File pada nomor 2 di upload ke google colab <b>"segmentrain.ipynb"</b>
