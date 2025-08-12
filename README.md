@@ -28,4 +28,4 @@ Folder bernama "images"   berisi semua file asli yang di segmen<br>
 Folder bernama "labels"   berisi semua file yang sudah diekstrak dari file my_data.zip yang didapat dari no 4 pada KONVERSI LABELING COCO ke YOLO<br>
 File bernama "classes"    berisi nama class-nya<br>
 2. Setelah itu lakukan proses zip, misalkan bernama datasegmen.zip <br>
-3. File pada nomor 2 di upload ke google colab <b>"segmentrain.ipynb"</b>
+3. File pada nomor 2 di upload ke google colab <b>"segmentrain1.ipynb"</b>
