@@ -1,7 +1,0 @@
-1. Siapkan gambar yang akan di segmen, lalu masukan ke folder di langkah 2
-2. Buatkan folder untuk menyimpan gambar yang akan di segmen (misalkan: image)
-3. Buatkan folder untuk menyimpan informasi JSON hasil segmen (misalkan: output)
-4. Download aplikasi AnyLabelling (AnyLabeling-Windows-CPU-x64.exe)
-5. Buka aplikasi AnyLabelling, lalu setting
-<img src="/asset/1.png" alt="prototype" width="800">
-6.
